@@ -1,63 +1,142 @@
-body, html {
+@font-face {
+    font-family: odin-lined;
+    src: url(./Norse-Bold.otf);
+  }
+  *{
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    background-image: url("2 -  trending on artstation Jesus gives sight to t.png");
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgb(14, 38, 38);
+    opacity: 0.9;
+  }
+  main{
     display: flex;
-    color: azure;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-}
-
-.image-container {
-    flex: 0 0 33%;
-    background-image: url('techNutt3.png'); /* Replace 'your-main-image.jpg' with your image path */
-    background-size: cover;
-    background-position: center;
-}
-
-.form-container {
-    flex: 1;
-    display: flex;
-    opacity: 0.8;
-    background-color: black;
+    background-color: rgb(40, 81, 81);
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-}
-
-form {
-    max-width: 400px;
+    height: 100vh;
+    
+  }
+  .main-container{
+    display: flex;
+  }
+  aside{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("techNutt3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+    height: 200px;
     width: 100%;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="password"],
-form button {
-    width: 100%;
+  }
+  .logo-container img{
+    width: 110px;
+  }
+  .logo-container h1{
+    font-family: odin-lined;
+    color: #f9fafb;
+    font-size: 6rem;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+  .text-container{
+    padding: 80px 100px 101px 40px;
+    background-color: azure;
+    border-radius: 15px;
+  }
+  .text-container p{
+    font-weight: bold;
+    font-size: 1.2rem;
     margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
+    
+  }
+  .form-section{
+    margin-top: 12px;
+    background-color: #fff;
+    padding: 20px 120px 20px 40px;
+    margin-bottom: 25px;
+    box-shadow: 0px 4px 12px -8px rgba(0,0,0,0.75);
+  }
+  .form-section p{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  form div{
+    display: flex;
+    flex-direction: column;
+  }
+  form div label{
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-bottom: 1px;
+  }
+  form div input{
+    border: solid 1px #E5E7EB;
     border-radius: 5px;
-    box-sizing: border-box;
-}
-
-form button {
-    background-color: #4CAF50;
-    color: white;
+    height: 25px;
+    padding-left: 10px;
+    margin-bottom: 12px;
+    width: 80%;
+    outline: none;
+  }
+  form div input:focus{
+    border: solid 1.5px rgb(83, 117, 214);
+    box-shadow: 4px 4px 12px -8px rgba(83, 117, 214,0.75);
+  }
+  .error{
+    border: solid 1.5px rgb(193, 53, 53);
+    box-shadow: 4px 4px 12px -8px rgba(193, 53, 53,0.75);
+  } 
+  
+  .button-container{
+    padding-left: 40px;
+  }
+  
+  .button-container button{
+    background-color: rgb(88, 165, 155);
+    box-shadow: 4px 4px 12px -8px rgba(88, 165, 155,0.75);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 35px;
+    margin-bottom: 20px;
     cursor: pointer;
+  }
+  
+  .button-container p{
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .button-container a{
+    text-decoration: none;
+    color: rgb(88, 165, 155);
+  }
+  .button-container a:hover{
+    text-decoration: underline;
+  }
+@media (max-width: 769px) {
+    .main-container{
+        display: grid;
+      }
 }
-
-form button:hover {
-    background-color: #45a049;
-}
-

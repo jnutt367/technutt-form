@@ -1,24 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JNutt's Tech Emporium Sign Up</title>
-    <link rel="stylesheet" href="styles.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Odin Sign-up Form</title>
 </head>
 <body>
-    <div class="container">
-        <div class="image-container"></div>
-        <div class="form-container">
-            <form>
-                <h2>Sign Up to JNutt's Tech Emporium</h2>
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-                <input type="password" placeholder="Password">
-                <button type="submit">Sign Up</button>
-            </form>
+  <main>
+    <div class="main-container">
+      <aside>
+        <div class="logo-container">
+          <img src="techNutt2.png" alt="odin-logo">
+          <h1>JNUTT</h1>
         </div>
+      </aside>
+
+      <section>
+
+        <div class="text-container">
+          <p>Come Sign Up For this Thing I am Promoting</p>
+          <p>You know you want to.</p>
+        </div>
+    
+        <div class="form-section">
+          <p>Let's do this!</p>
+          <form action="/" method="post" id="myForm">
+            <div>
+              <label for="first_name">FIRST NAME</label>
+              <input type="text" id="first_name" required>
+            </div>
+            <div>
+              <label for="last_name">LAST NAME</label>
+              <input type="text" id="last_name" required>
+            </div>
+    
+            <div>
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" required>
+            </div>
+      
+            <div>
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" required>
+            </div>
+    
+    
+            <div>
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" required>
+            </div>
+            <div>
+              <label for="password_confirm">CONFIRM PASSWORD</label>
+              <input type="password" id="password_confirm" required>
+
+            </div>
+    
+    
+          </form>
+        </div>
+    
+        <div class="button-container">
+          <button type="submit" form="myForm">Create Account</button>
+          <p>Already have an account? <a href="/">Log In</a></p>
+        </div>
+
+      </section>
+
     </div>
+  </main>
 </body>
 </html>
