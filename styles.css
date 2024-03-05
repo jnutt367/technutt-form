@@ -55,15 +55,18 @@
     flex-direction: column;
   }
   .text-container{
-    padding: 80px 100px 101px 40px;
+    margin-top: 20px;
+    padding: 20px 10px 15px 40px;
     background-color: azure;
     border-radius: 15px;
   }
   .text-container p{
     font-weight: bold;
     font-size: 1.2rem;
-    margin-bottom: 15px;
-    
+    margin-bottom: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    padding: 1rem;
   }
   .form-section{
     margin-top: 12px;
@@ -139,4 +142,22 @@
     .main-container{
         display: grid;
       }
+
+      aside {
+       margin-top: 300px ;
+       margin-bottom: -200px;
+      }
+      .text-container{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-top: 20px;
+        padding: 20px 10px 15px 10px;
+        background-color: azure;
+        border-radius: 15px;
+        width: fit-content;
+        text-align: center;
+      }
+
 }
