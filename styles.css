@@ -6,7 +6,11 @@ body, html {
 }
 
 .container {
+    background-image: url("2 -  trending on artstation Jesus gives sight to t.png");
     display: flex;
+    color: azure;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
 }
 
@@ -20,6 +24,8 @@ body, html {
 .form-container {
     flex: 1;
     display: flex;
+    opacity: 0.8;
+    background-color: black;
     justify-content: center;
     align-items: center;
     padding: 20px;
